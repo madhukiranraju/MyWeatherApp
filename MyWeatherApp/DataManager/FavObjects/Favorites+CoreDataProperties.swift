@@ -16,9 +16,10 @@ extension Favorites {
         return NSFetchRequest<Favorites>(entityName: "Favorites")
     }
 
-    @NSManaged public var placeName: String?
     @NSManaged public var latitude: String?
     @NSManaged public var longitude: String?
+    @NSManaged public var placeName: String?
+    @NSManaged public var uuid: String?
 
 }
 

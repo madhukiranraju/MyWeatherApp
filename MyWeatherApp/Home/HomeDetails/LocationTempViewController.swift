@@ -1,5 +1,5 @@
 //
-//  ListViewController.swift
+//  LocationTempViewController.swift
 //  MyWeatherApp
 //
 //  Created by madhu kiran on 06/01/21.
@@ -7,12 +7,11 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
+class LocationTempViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
 

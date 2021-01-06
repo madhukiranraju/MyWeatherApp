@@ -10,6 +10,26 @@
 		FDF8344025A581E300E250FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8343F25A581E300E250FE /* HomeViewController.swift */; };
 		FDF8344125A581E300E250FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8343F25A581E300E250FE /* HomeViewController.swift */; };
 		FDF8344225A581E300E250FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8343F25A581E300E250FE /* HomeViewController.swift */; };
+		FDF8344A25A58BC900E250FE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8344925A58BC900E250FE /* Place.swift */; };
+		FDF8344B25A58BC900E250FE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8344925A58BC900E250FE /* Place.swift */; };
+		FDF8344C25A58BC900E250FE /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8344925A58BC900E250FE /* Place.swift */; };
+		FDF8345A25A58C2D00E250FE /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8345925A58C2D00E250FE /* MapViewModel.swift */; };
+		FDF8345B25A58C2D00E250FE /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8345925A58C2D00E250FE /* MapViewModel.swift */; };
+		FDF8345C25A58C2D00E250FE /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8345925A58C2D00E250FE /* MapViewModel.swift */; };
+		FDF8346425A59FEE00E250FE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8346325A59FEE00E250FE /* HomeViewModel.swift */; };
+		FDF8346525A59FEE00E250FE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8346325A59FEE00E250FE /* HomeViewModel.swift */; };
+		FDF8346625A59FEE00E250FE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8346325A59FEE00E250FE /* HomeViewModel.swift */; };
+		FDF8347225A5ADDB00E250FE /* LocationTempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8347125A5ADDB00E250FE /* LocationTempViewController.swift */; };
+		FDF8347325A5ADDB00E250FE /* LocationTempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8347125A5ADDB00E250FE /* LocationTempViewController.swift */; };
+		FDF8347425A5ADDB00E250FE /* LocationTempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8347125A5ADDB00E250FE /* LocationTempViewController.swift */; };
+		FDF8347825A5AFFD00E250FE /* MyWeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17DD25A4C8D100611543 /* MyWeatherApp.xcdatamodeld */; };
+		FDF8347C25A5AFFE00E250FE /* MyWeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17DD25A4C8D100611543 /* MyWeatherApp.xcdatamodeld */; };
+		FDF8348925A5B14A00E250FE /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8348725A5B14A00E250FE /* Favorites+CoreDataClass.swift */; };
+		FDF8348A25A5B14A00E250FE /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8348725A5B14A00E250FE /* Favorites+CoreDataClass.swift */; };
+		FDF8348B25A5B14A00E250FE /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8348725A5B14A00E250FE /* Favorites+CoreDataClass.swift */; };
+		FDF8348C25A5B14A00E250FE /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8348825A5B14A00E250FE /* Favorites+CoreDataProperties.swift */; };
+		FDF8348D25A5B14A00E250FE /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8348825A5B14A00E250FE /* Favorites+CoreDataProperties.swift */; };
+		FDF8348E25A5B14A00E250FE /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8348825A5B14A00E250FE /* Favorites+CoreDataProperties.swift */; };
 		FDFA17D525A4C8D100611543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17D425A4C8D100611543 /* AppDelegate.swift */; };
 		FDFA17D725A4C8D100611543 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17D625A4C8D100611543 /* SceneDelegate.swift */; };
 		FDFA17DC25A4C8D100611543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFA17DA25A4C8D100611543 /* Main.storyboard */; };
@@ -23,21 +43,12 @@
 		FDFA183225A4F6AA00611543 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA182E25A4F6AA00611543 /* MapViewController.swift */; };
 		FDFA183325A4F6AA00611543 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA182E25A4F6AA00611543 /* MapViewController.swift */; };
 		FDFA183425A4F6AA00611543 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA182E25A4F6AA00611543 /* MapViewController.swift */; };
-		FDFA184725A4F6DB00611543 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA184625A4F6DB00611543 /* ListViewController.swift */; };
-		FDFA184825A4F6DB00611543 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA184625A4F6DB00611543 /* ListViewController.swift */; };
-		FDFA184925A4F6DB00611543 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA184625A4F6DB00611543 /* ListViewController.swift */; };
 		FDFA185125A52BB700611543 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185025A52BB600611543 /* LocationTableViewCell.swift */; };
 		FDFA185225A52BB700611543 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185025A52BB600611543 /* LocationTableViewCell.swift */; };
 		FDFA185325A52BB700611543 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185025A52BB600611543 /* LocationTableViewCell.swift */; };
 		FDFA185825A536E700611543 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185725A536E600611543 /* DataManager.swift */; };
 		FDFA185925A536E700611543 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185725A536E600611543 /* DataManager.swift */; };
 		FDFA185A25A536E700611543 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185725A536E600611543 /* DataManager.swift */; };
-		FDFA186725A5383400611543 /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186525A5383400611543 /* Favorites+CoreDataClass.swift */; };
-		FDFA186825A5383400611543 /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186525A5383400611543 /* Favorites+CoreDataClass.swift */; };
-		FDFA186925A5383400611543 /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186525A5383400611543 /* Favorites+CoreDataClass.swift */; };
-		FDFA186A25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186625A5383400611543 /* Favorites+CoreDataProperties.swift */; };
-		FDFA186B25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186625A5383400611543 /* Favorites+CoreDataProperties.swift */; };
-		FDFA186C25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186625A5383400611543 /* Favorites+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +70,13 @@
 
 /* Begin PBXFileReference section */
 		FDF8343F25A581E300E250FE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FDF8344925A58BC900E250FE /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		FDF8345925A58C2D00E250FE /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		FDF8346325A59FEE00E250FE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FDF8347125A5ADDB00E250FE /* LocationTempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTempViewController.swift; sourceTree = "<group>"; };
+		FDF8348025A5B0DA00E250FE /* MyWeatherApp 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MyWeatherApp 2.xcdatamodel"; sourceTree = "<group>"; };
+		FDF8348725A5B14A00E250FE /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FDF8348825A5B14A00E250FE /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FDFA17D125A4C8D100611543 /* MyWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFA17D425A4C8D100611543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDFA17D625A4C8D100611543 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,11 +94,8 @@
 		FDFA180B25A4F00E00611543 /* HomeTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestCase.swift; sourceTree = "<group>"; };
 		FDFA181D25A4F20400611543 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FDFA182E25A4F6AA00611543 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		FDFA184625A4F6DB00611543 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FDFA185025A52BB600611543 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		FDFA185725A536E600611543 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		FDFA186525A5383400611543 /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = "<group>"; };
-		FDFA186625A5383400611543 /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +123,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FDF8345025A58BEA00E250FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8344925A58BC900E250FE /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDF8345125A58BF600E250FE /* LocationCell */ = {
+			isa = PBXGroup;
+			children = (
+				FDFA185025A52BB600611543 /* LocationTableViewCell.swift */,
+			);
+			path = LocationCell;
+			sourceTree = "<group>";
+		};
+		FDF8345225A58C1500E250FE /* MapSearchLocation */ = {
+			isa = PBXGroup;
+			children = (
+				FDFA182E25A4F6AA00611543 /* MapViewController.swift */,
+				FDF8345925A58C2D00E250FE /* MapViewModel.swift */,
+			);
+			path = MapSearchLocation;
+			sourceTree = "<group>";
+		};
+		FDF8346D25A5AD2C00E250FE /* HomeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8347125A5ADDB00E250FE /* LocationTempViewController.swift */,
+			);
+			path = HomeDetails;
+			sourceTree = "<group>";
+		};
 		FDFA17C825A4C8D100611543 = {
 			isa = PBXGroup;
 			children = (
@@ -167,10 +215,12 @@
 		FDFA183B25A4F6B300611543 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FDF8345025A58BEA00E250FE /* Model */,
 				FDF8343F25A581E300E250FE /* HomeViewController.swift */,
-				FDFA185025A52BB600611543 /* LocationTableViewCell.swift */,
-				FDFA182E25A4F6AA00611543 /* MapViewController.swift */,
-				FDFA184625A4F6DB00611543 /* ListViewController.swift */,
+				FDF8346325A59FEE00E250FE /* HomeViewModel.swift */,
+				FDF8345125A58BF600E250FE /* LocationCell */,
+				FDF8346D25A5AD2C00E250FE /* HomeDetails */,
+				FDF8345225A58C1500E250FE /* MapSearchLocation */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -195,8 +245,8 @@
 		FDFA187625A5384C00611543 /* FavObjects */ = {
 			isa = PBXGroup;
 			children = (
-				FDFA186525A5383400611543 /* Favorites+CoreDataClass.swift */,
-				FDFA186625A5383400611543 /* Favorites+CoreDataProperties.swift */,
+				FDF8348725A5B14A00E250FE /* Favorites+CoreDataClass.swift */,
+				FDF8348825A5B14A00E250FE /* Favorites+CoreDataProperties.swift */,
 			);
 			path = FavObjects;
 			sourceTree = "<group>";
@@ -331,17 +381,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDFA186725A5383400611543 /* Favorites+CoreDataClass.swift in Sources */,
 				FDFA183225A4F6AA00611543 /* MapViewController.swift in Sources */,
-				FDFA186A25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */,
+				FDF8348925A5B14A00E250FE /* Favorites+CoreDataClass.swift in Sources */,
+				FDF8344A25A58BC900E250FE /* Place.swift in Sources */,
+				FDF8348C25A5B14A00E250FE /* Favorites+CoreDataProperties.swift in Sources */,
+				FDF8345A25A58C2D00E250FE /* MapViewModel.swift in Sources */,
 				FDFA185125A52BB700611543 /* LocationTableViewCell.swift in Sources */,
 				FDFA17DF25A4C8D100611543 /* MyWeatherApp.xcdatamodeld in Sources */,
 				FDFA17D525A4C8D100611543 /* AppDelegate.swift in Sources */,
 				FDFA17D725A4C8D100611543 /* SceneDelegate.swift in Sources */,
+				FDF8346425A59FEE00E250FE /* HomeViewModel.swift in Sources */,
 				FDF8344025A581E300E250FE /* HomeViewController.swift in Sources */,
 				FDFA181E25A4F20400611543 /* SettingsViewController.swift in Sources */,
+				FDF8347225A5ADDB00E250FE /* LocationTempViewController.swift in Sources */,
 				FDFA185825A536E700611543 /* DataManager.swift in Sources */,
-				FDFA184725A4F6DB00611543 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,15 +402,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF8347825A5AFFD00E250FE /* MyWeatherApp.xcdatamodeld in Sources */,
 				FDFA185225A52BB700611543 /* LocationTableViewCell.swift in Sources */,
+				FDF8348D25A5B14A00E250FE /* Favorites+CoreDataProperties.swift in Sources */,
 				FDFA180C25A4F00E00611543 /* HomeTestCase.swift in Sources */,
 				FDFA17EF25A4C8D600611543 /* MyWeatherAppTests.swift in Sources */,
 				FDFA185925A536E700611543 /* DataManager.swift in Sources */,
-				FDFA184825A4F6DB00611543 /* ListViewController.swift in Sources */,
 				FDF8344125A581E300E250FE /* HomeViewController.swift in Sources */,
+				FDF8345B25A58C2D00E250FE /* MapViewModel.swift in Sources */,
+				FDF8346525A59FEE00E250FE /* HomeViewModel.swift in Sources */,
 				FDFA183325A4F6AA00611543 /* MapViewController.swift in Sources */,
-				FDFA186B25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */,
-				FDFA186825A5383400611543 /* Favorites+CoreDataClass.swift in Sources */,
+				FDF8347325A5ADDB00E250FE /* LocationTempViewController.swift in Sources */,
+				FDF8344B25A58BC900E250FE /* Place.swift in Sources */,
+				FDF8348A25A5B14A00E250FE /* Favorites+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,13 +423,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDFA17FA25A4C8D700611543 /* MyWeatherAppUITests.swift in Sources */,
+				FDF8346625A59FEE00E250FE /* HomeViewModel.swift in Sources */,
+				FDF8345C25A58C2D00E250FE /* MapViewModel.swift in Sources */,
 				FDFA185A25A536E700611543 /* DataManager.swift in Sources */,
+				FDF8347C25A5AFFE00E250FE /* MyWeatherApp.xcdatamodeld in Sources */,
 				FDFA185325A52BB700611543 /* LocationTableViewCell.swift in Sources */,
 				FDF8344225A581E300E250FE /* HomeViewController.swift in Sources */,
-				FDFA186925A5383400611543 /* Favorites+CoreDataClass.swift in Sources */,
+				FDF8348E25A5B14A00E250FE /* Favorites+CoreDataProperties.swift in Sources */,
 				FDFA183425A4F6AA00611543 /* MapViewController.swift in Sources */,
-				FDFA184925A4F6DB00611543 /* ListViewController.swift in Sources */,
-				FDFA186C25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */,
+				FDF8348B25A5B14A00E250FE /* Favorites+CoreDataClass.swift in Sources */,
+				FDF8344C25A58BC900E250FE /* Place.swift in Sources */,
+				FDF8347425A5ADDB00E250FE /* LocationTempViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,9 +749,10 @@
 		FDFA17DD25A4C8D100611543 /* MyWeatherApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				FDF8348025A5B0DA00E250FE /* MyWeatherApp 2.xcdatamodel */,
 				FDFA17DE25A4C8D100611543 /* MyWeatherApp.xcdatamodel */,
 			);
-			currentVersion = FDFA17DE25A4C8D100611543 /* MyWeatherApp.xcdatamodel */;
+			currentVersion = FDF8348025A5B0DA00E250FE /* MyWeatherApp 2.xcdatamodel */;
 			path = MyWeatherApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

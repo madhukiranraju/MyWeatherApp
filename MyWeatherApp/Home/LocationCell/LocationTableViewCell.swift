@@ -9,6 +9,12 @@ import UIKit
 
 class LocationTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var namelbl: UILabel!
+    @IBOutlet weak var desclbl: UILabel!
+    @IBOutlet weak var latitudelbl: UILabel!
+    @IBOutlet weak var longitudelbl: UILabel!
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

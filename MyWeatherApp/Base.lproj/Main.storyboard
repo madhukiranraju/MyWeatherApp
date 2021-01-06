@@ -69,6 +69,12 @@
                                                 <constraint firstItem="HZd-ve-Dgw" firstAttribute="leading" secondItem="JOO-oE-zRe" secondAttribute="leading" constant="15" id="xvV-Yd-p8b"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="desclbl" destination="lCK-8z-8Kk" id="80l-kC-MZ5"/>
+                                            <outlet property="latitudelbl" destination="Znn-Gt-hOA" id="WyX-kQ-LUn"/>
+                                            <outlet property="longitudelbl" destination="70y-Xk-GOv" id="AUV-34-oCn"/>
+                                            <outlet property="namelbl" destination="oL5-qx-J23" id="t9n-Be-6ct"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -86,7 +92,7 @@
                             <constraint firstItem="qPH-RT-RGU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hEC-fy-nsF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="ZwX-SV-Yvc">
+                    <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="always" id="ZwX-SV-Yvc">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="xhB-pQ-Ndc">
                             <connections>
                                 <action selector="showMapView:" destination="BYZ-38-t0r" id="U6F-EV-iA0"/>
@@ -96,13 +102,30 @@
                     <connections>
                         <outlet property="tableView" destination="qPH-RT-RGU" id="AT5-Xb-R4r"/>
                         <segue destination="Z8k-hG-nl7" kind="show" identifier="HOMETOMAPVIEW" id="awk-56-sch"/>
+                        <segue destination="iGY-HQ-e9Y" kind="show" id="NTB-Jn-qd8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1960.8695652173915" y="79.6875"/>
         </scene>
-        <!--Map View Controller-->
+        <!--View Controller-->
+        <scene sceneID="0LT-lM-BD4">
+            <objects>
+                <viewController id="iGY-HQ-e9Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HLc-gS-s8a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4Sg-vd-kAd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N7t-ys-BF4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ovH-5m-CZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2752" y="430"/>
+        </scene>
+        <!--Search for location-->
         <scene sceneID="YiB-cm-fss">
             <objects>
                 <viewController storyboardIdentifier="MapViewController" id="Z8k-hG-nl7" customClass="MapViewController" customModule="MyWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,7 +146,7 @@
                             <constraint firstItem="lja-R6-MYl" firstAttribute="leading" secondItem="hUB-O8-UC3" secondAttribute="leading" id="mcs-B6-nZw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="302-K9-Y9W"/>
+                    <navigationItem key="navigationItem" title="Search for location" id="302-K9-Y9W"/>
                     <connections>
                         <outlet property="mapView" destination="lja-R6-MYl" id="RLb-9U-Loe"/>
                     </connections>
@@ -154,6 +177,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vUg-mF-qDK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s9l-wT-C6U">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

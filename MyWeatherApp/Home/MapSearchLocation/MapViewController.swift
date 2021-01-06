@@ -8,12 +8,6 @@
 import UIKit
 import MapKit
 
-struct Place {
-    var placeName : String?
-    var latitude : String?
-    var longitude : String?
-}
-
 class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
@@ -92,6 +86,9 @@ extension MapViewController :UISearchResultsUpdating{
         self.showAnnotationLocation(searchController.searchBar.text!)
     }
 }
+
+//Extension for MapViewController
+
 extension MapViewController : MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
@@ -104,10 +101,20 @@ extension MapViewController : MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         print(#function)
         if control == view.rightCalloutAccessoryView {
-            self.navigationController?.popViewController(animated: true)
-            //call back
-            print(selectedPlace.placeName ?? "NOOOOOOO")
-            self.refreshData?(selectedPlace)
+            
+            //storing the place in CoreData
+            MapViewModel.sharedInstance.insertPlaceIntoDB(place: self.selectedPlace) {[weak self] (status) -> (Void) in
+                DispatchQueue.main.async {
+                    if status{
+                        self?.navigationController?.popViewController(animated: true)
+                        //call back
+                        self!.refreshData?(self?.selectedPlace)
+                    }else{
+                        //stay in the same View
+                        print("Failed")
+                    }
+                }//end of dispatch main
+            }
         }
     }
     

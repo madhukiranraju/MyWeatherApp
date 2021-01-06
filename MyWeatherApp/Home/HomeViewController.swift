@@ -9,8 +9,9 @@ import UIKit
 
 class HomeViewController: UIViewController  {
 
+    var places = [Place]()
     @IBOutlet weak var tableView: UITableView!
-  
+    
     
     @IBAction func showMapView(_ sender: Any) {
         performSegue(withIdentifier: "HOMETOMAPVIEW", sender: nil)
@@ -18,7 +19,16 @@ class HomeViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.tableView.tableFooterView = UIView()
+        HomeViewModel.sharedInstance.fetchPlaces {[weak self] (places) in
+            guard let places = places else{return}
+            DispatchQueue.main.async {
+                self?.places = places
+                self?.tableView.reloadData()
+            }
+        }
+        
     }
     
 
@@ -48,12 +58,16 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! LocationTableViewCell
-        
+        let dict = self.places[indexPath.row]
+        cell.namelbl.text = dict.placeName ?? ""
+        cell.desclbl.text = dict.placeName ?? ""
+        cell.latitudelbl.text = dict.latitude ?? ""
+        cell.longitudelbl.text = dict.longitude ?? ""
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.places.count
     }
 }
