@@ -20,35 +20,36 @@ class LocationTempViewController: UIViewController {
     @IBOutlet weak var templbl: UILabel!
     @IBOutlet weak var humiditylbl: UILabel!
     @IBOutlet weak var windspeedlbl: UILabel!
-
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = place?.placeName ?? ""
-        self.placelbl.text = place?.placeName ?? ""
         self.imgView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
         guard let place = place else {
             return
         }
         LocationTempViewModel.sharedInstance.getLocationTempFromAPI(latitude: (place.latitude)!, longitude: place.longitude!) {[weak self] (weather) in
-            //print(weather)
+           // print(weather)
+            guard let weather = weather else {return}
             DispatchQueue.main.async {
-                self!.forecastlbl.text = weather?.weather[0].description.capitalized ?? "Unknown"
+                self!.placelbl.text = "\(place.placeName ?? "") (\(weather.name))"
+
+                self!.forecastlbl.text = weather.weather[0].description.capitalized 
                 self!.imgView.isHidden = false
-                self!.imgView.image = UIImage(named: (weather?.weather[0].icon)!)
+                self!.imgView.image = UIImage(named: (weather.weather[0].icon))
                 if !UserDefaults.standard.bool(forKey: Constant.kMetricConstant){
-                    let temp = weather?.main.temp.toCelsius() ?? -999.00
+                    let temp = weather.main.temp.toCelsius() 
                     self!.templbl.text = "\(temp)°C"
+//                    self?.windspeedlbl.text = "Wind speed : \(weather.wind.deg)°, \(weather?.wind.speed)Kmph"
                 }else{
-                    let temp = weather?.main.temp.toFahrenheit() ?? -999.00
+                    let temp = weather.main.temp.toFahrenheit() 
                     self!.templbl.text = "\(temp)°F"
+//                    self?.windspeedlbl.text = "Wind speed : \(weather.wind.deg)°, \(weather?.wind.speed)Mph"
                 }
-                let humidity = Double(String(format:"%.1f",weather?.main.humidity ?? -999.00))
-                self!.humiditylbl.text = "\(humidity!)"
-//                self?.windspeedlbl.text = "Wind speed : \(weather?.wind.deg ?? 0)°, \(weather?.wind.speed ?? 0)Km(s)"
+                let humidity = Double(String(format:"%.1f",weather.main.humidity ))
+                self!.humiditylbl.text = "\(humidity!)%"
+                self?.windspeedlbl.text = "Wind speed : \(weather.wind.deg)°, \(weather.wind.speed)Kmph"
             }
         }
         
@@ -77,15 +78,7 @@ class LocationTempViewController: UIViewController {
         self.navigationController?.tabBarController?.tabBar.isHidden = false
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }
 extension LocationTempViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

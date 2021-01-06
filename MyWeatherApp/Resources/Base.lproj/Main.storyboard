@@ -308,7 +308,9 @@
                             <constraint firstItem="lja-R6-MYl" firstAttribute="leading" secondItem="hUB-O8-UC3" secondAttribute="leading" id="mcs-B6-nZw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Search for location" id="302-K9-Y9W"/>
+                    <navigationItem key="navigationItem" title="Search for location" id="302-K9-Y9W">
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="9cQ-jv-PEI"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="lja-R6-MYl" id="RLb-9U-Loe"/>
                     </connections>
@@ -459,6 +461,7 @@
     <resources>
         <image name="gear-7" width="30" height="30"/>
         <image name="home-7" width="30" height="30"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -4,7 +4,7 @@
 //
 //  Created by madhu kiran on 05/01/21.
 //
-
+import UIKit
 import XCTest
 @testable import MyWeatherApp
 
@@ -12,8 +12,17 @@ class MyWeatherAppTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        test_WebServiceManagerExist()
     }
-
+    func test_DataManagerExist(){
+        let dataManager = DataManager.sharedInstance
+        XCTAssertNotNil(dataManager)
+    }
+    
+    func test_WebServiceManagerExist(){
+        let webServicemanager = APIManager.sharedInstance
+        XCTAssertNotNil(webServicemanager)
+    }
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
@@ -30,4 +39,5 @@ class MyWeatherAppTests: XCTestCase {
         }
     }
 
+    
 }

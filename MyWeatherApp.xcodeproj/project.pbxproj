@@ -60,6 +60,7 @@
 		FDF8354425A64F6B00E250FE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8354325A64F6B00E250FE /* Constant.swift */; };
 		FDF8354525A64F6B00E250FE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8354325A64F6B00E250FE /* Constant.swift */; };
 		FDF8354625A64F6B00E250FE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8354325A64F6B00E250FE /* Constant.swift */; };
+		FDF8354F25A65F1D00E250FE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF8354E25A65F1D00E250FE /* WebKit.framework */; };
 		FDFA17D525A4C8D100611543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17D425A4C8D100611543 /* AppDelegate.swift */; };
 		FDFA17DC25A4C8D100611543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFA17DA25A4C8D100611543 /* Main.storyboard */; };
 		FDFA17DF25A4C8D100611543 /* MyWeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17DD25A4C8D100611543 /* MyWeatherApp.xcdatamodeld */; };
@@ -116,6 +117,7 @@
 		FDF8352225A6445C00E250FE /* WeatherAPIHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WeatherAPIHelp.html; sourceTree = "<group>"; };
 		FDF8352C25A644C500E250FE /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		FDF8354325A64F6B00E250FE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FDF8354E25A65F1D00E250FE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FDFA17D125A4C8D100611543 /* MyWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFA17D425A4C8D100611543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDFA17DB25A4C8D100611543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF8354F25A65F1D00E250FE /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +253,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		FDF8354D25A65F1C00E250FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8354E25A65F1D00E250FE /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDFA17C825A4C8D100611543 = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +268,7 @@
 				FDFA17ED25A4C8D600611543 /* MyWeatherAppTests */,
 				FDFA17F825A4C8D700611543 /* MyWeatherAppUITests */,
 				FDFA17D225A4C8D100611543 /* Products */,
+				FDF8354D25A65F1C00E250FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

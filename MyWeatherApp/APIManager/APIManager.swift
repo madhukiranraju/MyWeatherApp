@@ -13,7 +13,6 @@ enum NetworkError: Error {
     case decodingError
 }
 
-
 class APIManager{
     
     static let sharedInstance = APIManager()
@@ -24,13 +23,14 @@ class APIManager{
         guard let url = URL.urlForWeatherFor(latitude: latitude, longitude: longitude) else {
             return completion(.failure(.badUrl))
         }
-        
+        print(url)
         URLSession.shared.dataTask(with: url) { data, response, error in
             
             guard let data = data, error == nil else {
                 return completion(.failure(.noData))
             }
-            
+//            let outputStr  = String(data: data, encoding: String.Encoding.utf8) as String?
+            //print(outputStr)
             let weatherResponse = try? JSONDecoder().decode(WeatherResponse.self, from: data)
             if let weatherResponse = weatherResponse {
                 completion(.success(weatherResponse))
