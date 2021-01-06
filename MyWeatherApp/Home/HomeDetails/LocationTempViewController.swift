@@ -29,7 +29,7 @@ class LocationTempViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = place?.placeName ?? ""
         self.placelbl.text = place?.placeName ?? ""
-        
+        self.imgView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
         guard let place = place else {
             return
         }
@@ -39,8 +39,13 @@ class LocationTempViewController: UIViewController {
                 self!.forecastlbl.text = weather?.weather[0].description.capitalized ?? "Unknown"
                 self!.imgView.isHidden = false
                 self!.imgView.image = UIImage(named: (weather?.weather[0].icon)!)
-                let temp = weather?.main.temp.toCelsius() ?? -999.00
-                self!.templbl.text = "\(temp)°C"
+                if !UserDefaults.standard.bool(forKey: Constant.kMetricConstant){
+                    let temp = weather?.main.temp.toCelsius() ?? -999.00
+                    self!.templbl.text = "\(temp)°C"
+                }else{
+                    let temp = weather?.main.temp.toFahrenheit() ?? -999.00
+                    self!.templbl.text = "\(temp)°F"
+                }
                 let humidity = Double(String(format:"%.1f",weather?.main.humidity ?? -999.00))
                 self!.humiditylbl.text = "\(humidity!)"
 //                self?.windspeedlbl.text = "Wind speed : \(weather?.wind.deg ?? 0)°, \(weather?.wind.speed ?? 0)Km(s)"
@@ -98,8 +103,13 @@ extension LocationTempViewController : UICollectionViewDelegate, UICollectionVie
         let dict = tempArr![indexPath.row]
         cell?.dateslbl.text = dict.dt_txt ?? ""
         cell?.imgView.image = UIImage(named: (dict.weather[0].icon ))
-        let temp = dict.main.temp.toCelsius()
-        cell?.templbl.text = "\(temp)°C"
+        if !UserDefaults.standard.bool(forKey: Constant.kMetricConstant){
+            let temp = dict.main.temp.toCelsius()
+            cell?.templbl.text = "\(temp)°C"
+        }else{
+            let temp = dict.main.temp.toFahrenheit()
+            cell?.templbl.text = "\(temp)°F"
+        }
         cell?.forecastlbl.text = dict.weather[0].description.capitalized
         return cell!
     }
