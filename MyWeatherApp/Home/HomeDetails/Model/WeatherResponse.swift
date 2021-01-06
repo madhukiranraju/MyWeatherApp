@@ -10,6 +10,7 @@ import Foundation
 struct WeatherResponse: Decodable {
     let main: Weather
     let weather : [WeatherDetails]
+    //let wind : WindSpeed
 }
 
 struct WeatherDetails: Decodable {
@@ -35,3 +36,7 @@ struct DailyWeather : Decodable {
     let cnt : Int
 }
 
+struct WindSpeed : Decodable{
+    let deg : Int
+    let speed : Int
+}

@@ -11,4 +11,5 @@ struct Place {
     var placeName : String?
     var latitude : String?
     var longitude : String?
+    var uuid : String?
 }

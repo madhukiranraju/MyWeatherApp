@@ -13,7 +13,7 @@ enum DataManagerError:Error{
     case failed
 }
 
-class DataManager{
+public class DataManager{
     
     static let sharedInstance = DataManager()
     
@@ -24,15 +24,7 @@ class DataManager{
     
     
     //Inserting Data into CoreData
-    /**
-     @nonobjc public class func fetchRequest() -> NSFetchRequest<Favorites> {
-         return NSFetchRequest<Favorites>(entityName: "Favorites")
-     }
 
-     @NSManaged public var placeName: String?
-     @NSManaged public var latitude: String?
-     @NSManaged public var longitude: String?
-     */
     func insertFavPlace(item : Place)throws{
         
         var thrownError: DataManagerError?
@@ -45,6 +37,7 @@ class DataManager{
                 favObj.placeName = item.placeName
                 favObj.latitude = item.latitude
                 favObj.longitude = item.longitude
+                favObj.uuid = item.uuid
                 privateContext.insert(favObj)
                 try privateContext.save()
                 try self.context.save()
@@ -70,4 +63,34 @@ class DataManager{
         return []
     }
     
+    func deleteFavPlace(place : Place) throws{
+        
+        guard let uuid = place.uuid else {
+            return
+        }
+        
+        let fetchrequest = NSFetchRequest<Favorites>(entityName: "Favorites")
+        fetchrequest.predicate = NSPredicate.init(format:"uuid==%@",uuid )
+        do {
+            let objects = try context.fetch(fetchrequest)
+            for object in objects {
+                context.delete(object)
+            }
+            try context.save()
+        } catch _ {
+            throw DataManagerError.failed
+            // error handling
+        }
+    }
+    
+    func removeAllFavorites(){
+        let deleteFetch = NSFetchRequest<Favorites>(entityName: "Favorites")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch as! NSFetchRequest<NSFetchRequestResult>)
+        do {
+            try context.execute(deleteRequest)
+            try context.save()
+        } catch {
+            print ("There was an error")
+        }
+    }
 }

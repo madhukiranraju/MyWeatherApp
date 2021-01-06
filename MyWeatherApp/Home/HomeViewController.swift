@@ -29,15 +29,24 @@ class HomeViewController: UIViewController  {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    
+    func fetchFavoritePlaces(){
         HomeViewModel.sharedInstance.fetchPlaces {[weak self] (places) in
-            guard let places = places else{return}
             DispatchQueue.main.async {
+                
+                guard let places = places else{
+                    self?.places.removeAll()
+                    self?.tableView.reloadData()
+                    return
+                }
                 self?.places = places
                 self?.tableView.reloadData()
             }
         }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.fetchFavoritePlaces()
     }
 
     
@@ -68,7 +77,11 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource{
    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
-            print("Delete at \(indexPath.row)")
+            HomeViewModel.sharedInstance.deleteFavorite(place: self.places[indexPath.row]) { (status) in
+                DispatchQueue.main.async {
+                    self.fetchFavoritePlaces()
+                }
+            }
         }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -38,7 +38,6 @@ class MapViewController: UIViewController {
             let locationOnMap = mapView.convert(locationInView, toCoordinateFrom: mapView)
             print(locationOnMap.latitude,locationOnMap.longitude)
             //self.mapView.addAnnotation(locationOnMap as! MKAnnotation)
-//            let coordinate = mapView.convertPoint(locationOnMap,toCoordinateFromView: mapView)
 
             let coordinate: CLLocation = CLLocation(latitude:locationOnMap.latitude, longitude: locationOnMap.longitude)
 
@@ -51,7 +50,7 @@ class MapViewController: UIViewController {
                     annotation.subtitle = locality[0].locality!
                     annotation.coordinate = CLLocationCoordinate2DMake(locationOnMap.latitude, locationOnMap.longitude)
                     self.mapView.addAnnotation(annotation)
-                    self.selectedPlace = Place(placeName: locality[0].locality ?? "", latitude: String(describing: locationOnMap.latitude ?? 0.0) , longitude: String(describing: locationOnMap.longitude ?? 0.0) )
+                    self.selectedPlace = Place(placeName: locality[0].locality ?? "", latitude: String(describing: locationOnMap.latitude ) , longitude: String(describing: locationOnMap.longitude ) , uuid: UUID().uuidString)
                     //Zooming in on annotation
                     let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(locationOnMap.latitude, locationOnMap.longitude)
                     let span = MKCoordinateSpan.init(latitudeDelta: 0.1, longitudeDelta: 0.1)//MKCoordinateSpanMake(0.1, 0.1)
@@ -85,7 +84,6 @@ class MapViewController: UIViewController {
             }
             else
             {
-               // print(response)
                 //Remove annotations
                 let annotations = self.mapView.annotations
                 self.mapView.removeAnnotations(annotations)
@@ -100,7 +98,7 @@ class MapViewController: UIViewController {
                 annotation.subtitle = response?.mapItems[0].name
                 annotation.coordinate = CLLocationCoordinate2DMake(latitude!, longitude!)
                 self.mapView.addAnnotation(annotation)
-                self.selectedPlace = Place(placeName: response?.mapItems[0].name ?? "", latitude: String(describing: latitude ?? 0.0) , longitude: String(describing: longitude ?? 0.0) )
+                self.selectedPlace = Place(placeName: response?.mapItems[0].name ?? "", latitude: String(describing: latitude ?? 0.0), longitude: String(describing: longitude ?? 0.0), uuid: UUID().uuidString)
                 //Zooming in on annotation
                 let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude!, longitude!)
                 let span = MKCoordinateSpan.init(latitudeDelta: 0.1, longitudeDelta: 0.1)//MKCoordinateSpanMake(0.1, 0.1)

@@ -19,6 +19,7 @@ class LocationTempViewController: UIViewController {
     @IBOutlet weak var forecastlbl: UILabel!
     @IBOutlet weak var templbl: UILabel!
     @IBOutlet weak var humiditylbl: UILabel!
+    @IBOutlet weak var windspeedlbl: UILabel!
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -42,6 +43,7 @@ class LocationTempViewController: UIViewController {
                 self!.templbl.text = "\(temp)°C"
                 let humidity = Double(String(format:"%.1f",weather?.main.humidity ?? -999.00))
                 self!.humiditylbl.text = "\(humidity!)"
+//                self?.windspeedlbl.text = "Wind speed : \(weather?.wind.deg ?? 0)°, \(weather?.wind.speed ?? 0)Km(s)"
             }
         }
         
