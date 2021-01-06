@@ -33,4 +33,9 @@ class HomeViewModel{
             completion(nil)
         }
     }
+    
+    
+    func deleteFavorite(place : Place,completion:@escaping(Bool)->Void){
+        
+    }
 }

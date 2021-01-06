@@ -25,6 +25,52 @@ class MapViewController: UIViewController {
         self.navigationItem.searchController = searchController
         self.definesPresentationContext = true
         self.mapView.delegate = self
+        
+        let longTapGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleTap))
+        mapView.addGestureRecognizer(longTapGesture)
+        
+    }
+    
+    @objc func handleTap(sender: UIGestureRecognizer){
+        print("long tap")
+        if sender.state == .began {
+            let locationInView = sender.location(in: mapView)
+            let locationOnMap = mapView.convert(locationInView, toCoordinateFrom: mapView)
+            print(locationOnMap.latitude,locationOnMap.longitude)
+            //self.mapView.addAnnotation(locationOnMap as! MKAnnotation)
+//            let coordinate = mapView.convertPoint(locationOnMap,toCoordinateFromView: mapView)
+
+            let coordinate: CLLocation = CLLocation(latitude:locationOnMap.latitude, longitude: locationOnMap.longitude)
+
+            let geocoder = CLGeocoder()
+            geocoder.reverseGeocodeLocation(coordinate) { (placemarks, error) in
+                if let locality = placemarks {
+                    //Create annotation
+                    let annotation = MKPointAnnotation()
+                    annotation.title = locality[0].locality!
+                    annotation.subtitle = locality[0].locality!
+                    annotation.coordinate = CLLocationCoordinate2DMake(locationOnMap.latitude, locationOnMap.longitude)
+                    self.mapView.addAnnotation(annotation)
+                    self.selectedPlace = Place(placeName: locality[0].locality ?? "", latitude: String(describing: locationOnMap.latitude ?? 0.0) , longitude: String(describing: locationOnMap.longitude ?? 0.0) )
+                    //Zooming in on annotation
+                    let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(locationOnMap.latitude, locationOnMap.longitude)
+                    let span = MKCoordinateSpan.init(latitudeDelta: 0.1, longitudeDelta: 0.1)//MKCoordinateSpanMake(0.1, 0.1)
+                    let region = MKCoordinateRegion.init(center: coordinate, span: span)//coordinate, span
+                    self.mapView.setRegion(region, animated: true)
+                }
+            }
+
+        }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.tabBarController?.tabBar.isHidden = true
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.tabBarController?.tabBar.isHidden = false
     }
     
     func showAnnotationLocation(_ place : String){
