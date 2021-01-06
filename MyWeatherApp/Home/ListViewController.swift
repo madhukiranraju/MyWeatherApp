@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  ListViewController.swift
 //  MyWeatherApp
 //
 //  Created by madhu kiran on 06/01/21.
@@ -7,18 +7,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController  {
+class ListViewController: UIViewController {
 
- 
-    @IBAction func searchLocation(_ sender: Any) {
-        let searchController = UISearchController(searchResultsController: nil)
-        searchController.searchBar.delegate = self
-        present(searchController, animated: true, completion: nil)
-        
-    }
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,10 +26,4 @@ class HomeViewController: UIViewController  {
     }
     */
 
-}
-extension HomeViewController : UISearchBarDelegate{
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
-    {
-        print(searchBar.text)
-    }
 }

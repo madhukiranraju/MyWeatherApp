@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDF8344025A581E300E250FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8343F25A581E300E250FE /* HomeViewController.swift */; };
+		FDF8344125A581E300E250FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8343F25A581E300E250FE /* HomeViewController.swift */; };
+		FDF8344225A581E300E250FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8343F25A581E300E250FE /* HomeViewController.swift */; };
 		FDFA17D525A4C8D100611543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17D425A4C8D100611543 /* AppDelegate.swift */; };
 		FDFA17D725A4C8D100611543 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17D625A4C8D100611543 /* SceneDelegate.swift */; };
 		FDFA17DC25A4C8D100611543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFA17DA25A4C8D100611543 /* Main.storyboard */; };
@@ -16,8 +19,25 @@
 		FDFA17EF25A4C8D600611543 /* MyWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17EE25A4C8D600611543 /* MyWeatherAppTests.swift */; };
 		FDFA17FA25A4C8D700611543 /* MyWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17F925A4C8D700611543 /* MyWeatherAppUITests.swift */; };
 		FDFA180C25A4F00E00611543 /* HomeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA180B25A4F00E00611543 /* HomeTestCase.swift */; };
-		FDFA181925A4F1F300611543 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA181825A4F1F300611543 /* HomeViewController.swift */; };
 		FDFA181E25A4F20400611543 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA181D25A4F20400611543 /* SettingsViewController.swift */; };
+		FDFA183225A4F6AA00611543 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA182E25A4F6AA00611543 /* MapViewController.swift */; };
+		FDFA183325A4F6AA00611543 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA182E25A4F6AA00611543 /* MapViewController.swift */; };
+		FDFA183425A4F6AA00611543 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA182E25A4F6AA00611543 /* MapViewController.swift */; };
+		FDFA184725A4F6DB00611543 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA184625A4F6DB00611543 /* ListViewController.swift */; };
+		FDFA184825A4F6DB00611543 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA184625A4F6DB00611543 /* ListViewController.swift */; };
+		FDFA184925A4F6DB00611543 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA184625A4F6DB00611543 /* ListViewController.swift */; };
+		FDFA185125A52BB700611543 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185025A52BB600611543 /* LocationTableViewCell.swift */; };
+		FDFA185225A52BB700611543 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185025A52BB600611543 /* LocationTableViewCell.swift */; };
+		FDFA185325A52BB700611543 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185025A52BB600611543 /* LocationTableViewCell.swift */; };
+		FDFA185825A536E700611543 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185725A536E600611543 /* DataManager.swift */; };
+		FDFA185925A536E700611543 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185725A536E600611543 /* DataManager.swift */; };
+		FDFA185A25A536E700611543 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA185725A536E600611543 /* DataManager.swift */; };
+		FDFA186725A5383400611543 /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186525A5383400611543 /* Favorites+CoreDataClass.swift */; };
+		FDFA186825A5383400611543 /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186525A5383400611543 /* Favorites+CoreDataClass.swift */; };
+		FDFA186925A5383400611543 /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186525A5383400611543 /* Favorites+CoreDataClass.swift */; };
+		FDFA186A25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186625A5383400611543 /* Favorites+CoreDataProperties.swift */; };
+		FDFA186B25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186625A5383400611543 /* Favorites+CoreDataProperties.swift */; };
+		FDFA186C25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA186625A5383400611543 /* Favorites+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FDF8343F25A581E300E250FE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FDFA17D125A4C8D100611543 /* MyWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFA17D425A4C8D100611543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDFA17D625A4C8D100611543 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,8 +74,13 @@
 		FDFA17F925A4C8D700611543 /* MyWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeatherAppUITests.swift; sourceTree = "<group>"; };
 		FDFA17FB25A4C8D700611543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDFA180B25A4F00E00611543 /* HomeTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestCase.swift; sourceTree = "<group>"; };
-		FDFA181825A4F1F300611543 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FDFA181D25A4F20400611543 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FDFA182E25A4F6AA00611543 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FDFA184625A4F6DB00611543 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		FDFA185025A52BB600611543 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		FDFA185725A536E600611543 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FDFA186525A5383400611543 /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FDFA186625A5383400611543 /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +133,9 @@
 			children = (
 				FDFA17D425A4C8D100611543 /* AppDelegate.swift */,
 				FDFA17D625A4C8D100611543 /* SceneDelegate.swift */,
-				FDFA181825A4F1F300611543 /* HomeViewController.swift */,
-				FDFA181D25A4F20400611543 /* SettingsViewController.swift */,
+				FDFA185E25A536EC00611543 /* DataManager */,
+				FDFA183B25A4F6B300611543 /* Home */,
+				FDFA184225A4F6BD00611543 /* Settings */,
 				FDFA17DA25A4C8D100611543 /* Main.storyboard */,
 				FDFA17E025A4C8D600611543 /* Assets.xcassets */,
 				FDFA17E225A4C8D600611543 /* LaunchScreen.storyboard */,
@@ -135,6 +162,43 @@
 				FDFA17FB25A4C8D700611543 /* Info.plist */,
 			);
 			path = MyWeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		FDFA183B25A4F6B300611543 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8343F25A581E300E250FE /* HomeViewController.swift */,
+				FDFA185025A52BB600611543 /* LocationTableViewCell.swift */,
+				FDFA182E25A4F6AA00611543 /* MapViewController.swift */,
+				FDFA184625A4F6DB00611543 /* ListViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FDFA184225A4F6BD00611543 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FDFA181D25A4F20400611543 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FDFA185E25A536EC00611543 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FDFA187625A5384C00611543 /* FavObjects */,
+				FDFA185725A536E600611543 /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		FDFA187625A5384C00611543 /* FavObjects */ = {
+			isa = PBXGroup;
+			children = (
+				FDFA186525A5383400611543 /* Favorites+CoreDataClass.swift */,
+				FDFA186625A5383400611543 /* Favorites+CoreDataProperties.swift */,
+			);
+			path = FavObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,11 +331,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFA186725A5383400611543 /* Favorites+CoreDataClass.swift in Sources */,
+				FDFA183225A4F6AA00611543 /* MapViewController.swift in Sources */,
+				FDFA186A25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */,
+				FDFA185125A52BB700611543 /* LocationTableViewCell.swift in Sources */,
 				FDFA17DF25A4C8D100611543 /* MyWeatherApp.xcdatamodeld in Sources */,
 				FDFA17D525A4C8D100611543 /* AppDelegate.swift in Sources */,
 				FDFA17D725A4C8D100611543 /* SceneDelegate.swift in Sources */,
+				FDF8344025A581E300E250FE /* HomeViewController.swift in Sources */,
 				FDFA181E25A4F20400611543 /* SettingsViewController.swift in Sources */,
-				FDFA181925A4F1F300611543 /* HomeViewController.swift in Sources */,
+				FDFA185825A536E700611543 /* DataManager.swift in Sources */,
+				FDFA184725A4F6DB00611543 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +349,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFA185225A52BB700611543 /* LocationTableViewCell.swift in Sources */,
 				FDFA180C25A4F00E00611543 /* HomeTestCase.swift in Sources */,
 				FDFA17EF25A4C8D600611543 /* MyWeatherAppTests.swift in Sources */,
+				FDFA185925A536E700611543 /* DataManager.swift in Sources */,
+				FDFA184825A4F6DB00611543 /* ListViewController.swift in Sources */,
+				FDF8344125A581E300E250FE /* HomeViewController.swift in Sources */,
+				FDFA183325A4F6AA00611543 /* MapViewController.swift in Sources */,
+				FDFA186B25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */,
+				FDFA186825A5383400611543 /* Favorites+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +366,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDFA17FA25A4C8D700611543 /* MyWeatherAppUITests.swift in Sources */,
+				FDFA185A25A536E700611543 /* DataManager.swift in Sources */,
+				FDFA185325A52BB700611543 /* LocationTableViewCell.swift in Sources */,
+				FDF8344225A581E300E250FE /* HomeViewController.swift in Sources */,
+				FDFA186925A5383400611543 /* Favorites+CoreDataClass.swift in Sources */,
+				FDFA183425A4F6AA00611543 /* MapViewController.swift in Sources */,
+				FDFA184925A4F6DB00611543 /* ListViewController.swift in Sources */,
+				FDFA186C25A5383400611543 /* Favorites+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
