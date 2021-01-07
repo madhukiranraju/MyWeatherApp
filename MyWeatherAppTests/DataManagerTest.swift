@@ -11,6 +11,7 @@ class DataManagerTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        test_DataManagerExist()
     }
 
     override func tearDownWithError() throws {
@@ -30,10 +31,16 @@ class DataManagerTest: XCTestCase {
             
         }
     }
+    func test_DataManagerExist(){
+        let dataManager = DataManager.sharedInstance
+        XCTAssertNotNil(dataManager)
+        testInsert()
+    }
+    
     func testInsert(){
         let dataManager = DataManager.sharedInstance
         
-        self.measure {
+//        self.measure {
             for _ in 0...1000{
                 let latitude = "26.8191"
                 let longitude = "80.4995"
@@ -44,7 +51,7 @@ class DataManagerTest: XCTestCase {
                 try! dataManager.insertFavPlace(item: fav)
             }
             testBatchDelete()
-        }
+//        }
     }
     func testBatchDelete(){
         DataManager.sharedInstance.removeAllFavorites()
