@@ -11,24 +11,26 @@ import XCTest
 class HomeVCTests: XCTestCase {
 
     var storyboard: UIStoryboard!
-    var homeVC: UIViewController!
+    var homeVC: HomeViewController!
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         storyboard = UIStoryboard(name: "Main", bundle: nil)
-        homeVC = storyboard.instantiateViewController(identifier: "HomeViewController")
+        homeVC = storyboard.instantiateViewController(identifier: "HomeViewController") as HomeViewController
         homeVC.loadViewIfNeeded()
         homeVC.viewDidLoad()
-        
-        //XCTAssertTrue(homeVC.tabBarController!.tabBarItem.title == "Home")
+        homeVC.viewDidAppear(true)
+        XCTAssertTrue(homeVC.navigationItem.title == "Home")
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         storyboard = nil
-        homeVC = nil
+        //homeVC = nil
     }
 
     func testBarbuttonItemHomeVC() throws{
+        XCTAssertTrue(homeVC.navigationItem.title == "Home")
+         
         //check if rightbarbutton present
         if let rightbarbutton = homeVC.navigationItem.rightBarButtonItem{
             XCTAssertTrue(rightbarbutton.action?.description == "addLocation")
@@ -39,7 +41,14 @@ class HomeVCTests: XCTestCase {
     }
     
     func testTableViewHomeVC()throws{
-                
+           
+        XCTAssertTrue(homeVC.conforms(to: UITableViewDelegate.self))
+        XCTAssertTrue(homeVC.conforms(to: UITableViewDataSource.self))
+        XCTAssertTrue(homeVC  is HomeViewController)
+
+        
+//        XCTAssertNotNil(homeVC.)
+//        let tableView = try XCTUnwrap(homeVC.t, "The firstNameTextField is not connected to an IBOutlet")
     }
     
     func testExample() throws {

@@ -29,6 +29,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FD94A97825A7A28B00ED9F4B"
+               BuildableName = "MyWeatherAppTestsNew.xctest"
+               BlueprintName = "MyWeatherAppTestsNew"
+               ReferencedContainer = "container:MyWeatherApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

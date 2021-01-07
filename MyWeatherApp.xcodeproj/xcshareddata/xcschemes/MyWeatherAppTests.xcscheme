@@ -17,9 +17,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FDFA17E925A4C8D600611543"
+               BlueprintIdentifier = "FD94A96725A7A26300ED9F4B"
                BuildableName = "MyWeatherAppTests.xctest"
                BlueprintName = "MyWeatherAppTests"
+               ReferencedContainer = "container:MyWeatherApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FD94A97825A7A28B00ED9F4B"
+               BuildableName = "MyWeatherAppTestsNew.xctest"
+               BlueprintName = "MyWeatherAppTestsNew"
                ReferencedContainer = "container:MyWeatherApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
