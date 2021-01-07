@@ -9,10 +9,10 @@ import XCTest
 @testable import MyWeatherApp
 
 class DataManagerTest: XCTestCase {
-
+    let dataManager = DataManager.sharedInstance
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        test_DataManagerExist()
+        //test_DataManagerExist()
     }
 
     override func tearDownWithError() throws {
@@ -33,13 +33,11 @@ class DataManagerTest: XCTestCase {
         }
     }
     func test_DataManagerExist(){
-        let dataManager = DataManager.sharedInstance
         XCTAssertNotNil(dataManager)
-        testInsert()
     }
     
     func testInsert(){
-        let dataManager = DataManager.sharedInstance
+//
         
 //        self.measure {
             for _ in 0...1000{
@@ -51,11 +49,11 @@ class DataManagerTest: XCTestCase {
                 let fav = Place(placeName: place, latitude: latitude, longitude: longitude, uuid: uuid)
                 try! dataManager.insertFavPlace(item: fav)
             }
-            testBatchDelete()
+            //testBatchDelete()
 //        }
     }
     func testBatchDelete(){
-        DataManager.sharedInstance.removeAllFavorites()
+        dataManager.removeAllFavorites()
     }
     
     

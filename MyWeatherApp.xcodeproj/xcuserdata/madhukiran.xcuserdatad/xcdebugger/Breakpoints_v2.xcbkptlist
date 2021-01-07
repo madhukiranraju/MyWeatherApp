@@ -55,16 +55,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E8E83B6F-1CDC-4655-9F7A-352BC66B9E2D"
+            uuid = "948A57E8-507F-4213-9640-8057AFE6D63F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyWeatherAppTestsNew/HomeVCTests.swift"
+            filePath = "MyWeatherAppTestsNew/APIManagerTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "testTableViewHomeVC()"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "testDailyWeatherNil()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47EC909E-18A9-4984-AD9D-A97F272207BD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyWeatherAppTestsNew/APIManagerTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "testWeatherNil()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

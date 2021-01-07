@@ -37,11 +37,15 @@ class APIManagerTest: XCTestCase {
             XCTAssertNil(nil)
         }
         
+        let expectation = self.expectation(description: " Web Service Response Expectation")
+        
         APIManager.sharedInstance.getWeather(latitude: "26.8191", longitude: "80.4995") { (result) in
+            
             switch result {
             case .success(let weather):
                 print(weather?.weather[0].description ?? "No ")
-                XCTFail("No error")
+//                XCTAssertEqual(type(of: weather!) , MyWeatherApp.WeatherResponse)//("No error")
+                expectation.fulfill()
             case .failure(let error):
                 print("Failed")
                 if error == NetworkError.noData{
@@ -54,6 +58,7 @@ class APIManagerTest: XCTestCase {
                 
             }
         }
+        self.wait(for: [expectation], timeout: 5)
     }
     
     func testDailyWeatherNil(){
@@ -62,11 +67,15 @@ class APIManagerTest: XCTestCase {
         APIManager.sharedInstance.getWeather(latitude: "", longitude: "") { (result) in
             XCTAssertNil(nil)
         }
+        
+        let expectation = self.expectation(description: " Web Service Response Expectation")
+
         APIManager.sharedInstance.getDailyWeather(latitude: "26.8191", longitude: "80.4995") { (result) in
             switch result {
             case .success(let weather):
                 print(weather?.list[0].weather[0].description ?? "No ")
-                XCTFail("No error")
+//                XCTAssertEqual(type(of: weather?.list[0]) , WeatherResponse.self)//("No error")
+                expectation.fulfill()
             case .failure(let error):
                 print("Failed")
                 if error == NetworkError.noData{
@@ -79,6 +88,8 @@ class APIManagerTest: XCTestCase {
                 
             }
         }
+        self.wait(for: [expectation], timeout: 5)
+
     }
 
 }
