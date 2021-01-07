@@ -1,13 +1,13 @@
 //
-//  HomeTestCase.swift
+//  SettingsVCTests.swift
 //  MyWeatherAppTests
 //
-//  Created by madhu kiran on 06/01/21.
+//  Created by madhu kiran on 07/01/21.
 //
-
 import XCTest
+@testable import MyWeatherApp
 
-class HomeTestCase: XCTestCase {
+class SettingsVCTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -27,6 +27,15 @@ class HomeTestCase: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testNumberOfRows(){
+
+        let className = NSStringFromClass(SettingsViewController.classForCoder())
+        print(className)
+        XCTAssertEqual(className, "MyWeatherApp.SettingsViewController")
+        
+        
     }
 
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDB7BC4B25A6795500B5A5CF /* APIManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB7BC4A25A6795500B5A5CF /* APIManagerTest.swift */; };
+		FDB7BC5025A6D3C400B5A5CF /* SettingsVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB7BC4F25A6D3C400B5A5CF /* SettingsVCTests.swift */; };
 		FDF8344025A581E300E250FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8343F25A581E300E250FE /* HomeViewController.swift */; };
 		FDF8344125A581E300E250FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8343F25A581E300E250FE /* HomeViewController.swift */; };
 		FDF8344225A581E300E250FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8343F25A581E300E250FE /* HomeViewController.swift */; };
@@ -68,7 +70,7 @@
 		FDFA17E425A4C8D600611543 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFA17E225A4C8D600611543 /* LaunchScreen.storyboard */; };
 		FDFA17EF25A4C8D600611543 /* MyWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17EE25A4C8D600611543 /* MyWeatherAppTests.swift */; };
 		FDFA17FA25A4C8D700611543 /* MyWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA17F925A4C8D700611543 /* MyWeatherAppUITests.swift */; };
-		FDFA180C25A4F00E00611543 /* HomeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA180B25A4F00E00611543 /* HomeTestCase.swift */; };
+		FDFA180C25A4F00E00611543 /* DataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA180B25A4F00E00611543 /* DataManagerTest.swift */; };
 		FDFA181E25A4F20400611543 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA181D25A4F20400611543 /* SettingsViewController.swift */; };
 		FDFA183225A4F6AA00611543 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA182E25A4F6AA00611543 /* MapViewController.swift */; };
 		FDFA183325A4F6AA00611543 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA182E25A4F6AA00611543 /* MapViewController.swift */; };
@@ -99,6 +101,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FDB7BC4A25A6795500B5A5CF /* APIManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTest.swift; sourceTree = "<group>"; };
+		FDB7BC4F25A6D3C400B5A5CF /* SettingsVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVCTests.swift; sourceTree = "<group>"; };
 		FDF8343F25A581E300E250FE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FDF8344925A58BC900E250FE /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		FDF8345925A58C2D00E250FE /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
@@ -131,7 +135,7 @@
 		FDFA17F525A4C8D600611543 /* MyWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFA17F925A4C8D700611543 /* MyWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeatherAppUITests.swift; sourceTree = "<group>"; };
 		FDFA17FB25A4C8D700611543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDFA180B25A4F00E00611543 /* HomeTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTestCase.swift; sourceTree = "<group>"; };
+		FDFA180B25A4F00E00611543 /* DataManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerTest.swift; sourceTree = "<group>"; };
 		FDFA181D25A4F20400611543 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FDFA182E25A4F6AA00611543 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FDFA185025A52BB600611543 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
@@ -303,7 +307,9 @@
 			isa = PBXGroup;
 			children = (
 				FDFA17EE25A4C8D600611543 /* MyWeatherAppTests.swift */,
-				FDFA180B25A4F00E00611543 /* HomeTestCase.swift */,
+				FDFA180B25A4F00E00611543 /* DataManagerTest.swift */,
+				FDB7BC4A25A6795500B5A5CF /* APIManagerTest.swift */,
+				FDB7BC4F25A6D3C400B5A5CF /* SettingsVCTests.swift */,
 				FDFA17F025A4C8D600611543 /* Info.plist */,
 			);
 			path = MyWeatherAppTests;
@@ -523,7 +529,7 @@
 				FDF8347825A5AFFD00E250FE /* MyWeatherApp.xcdatamodeld in Sources */,
 				FDFA185225A52BB700611543 /* LocationTableViewCell.swift in Sources */,
 				FDF8348D25A5B14A00E250FE /* Favorites+CoreDataProperties.swift in Sources */,
-				FDFA180C25A4F00E00611543 /* HomeTestCase.swift in Sources */,
+				FDFA180C25A4F00E00611543 /* DataManagerTest.swift in Sources */,
 				FDF834B725A5C04C00E250FE /* String+Extensions.swift in Sources */,
 				FDF834C125A5C05E00E250FE /* Double+Extensions.swift in Sources */,
 				FDFA17EF25A4C8D600611543 /* MyWeatherAppTests.swift in Sources */,
@@ -532,6 +538,8 @@
 				FDFA185925A536E700611543 /* DataManager.swift in Sources */,
 				FDF834A525A5BF9D00E250FE /* APIManager.swift in Sources */,
 				FDF834AD25A5C03100E250FE /* URL+Extensions.swift in Sources */,
+				FDB7BC4B25A6795500B5A5CF /* APIManagerTest.swift in Sources */,
+				FDB7BC5025A6D3C400B5A5CF /* SettingsVCTests.swift in Sources */,
 				FDF8344125A581E300E250FE /* HomeViewController.swift in Sources */,
 				FDF834FE25A5DE9E00E250FE /* TempCollectionViewCell.swift in Sources */,
 				FDF8345B25A58C2D00E250FE /* MapViewModel.swift in Sources */,

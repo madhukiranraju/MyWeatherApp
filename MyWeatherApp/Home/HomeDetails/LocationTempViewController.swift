@@ -48,7 +48,7 @@ class LocationTempViewController: UIViewController {
 //                    self?.windspeedlbl.text = "Wind speed : \(weather.wind.deg)°, \(weather?.wind.speed)Mph"
                 }
                 let humidity = Double(String(format:"%.1f",weather.main.humidity ))
-                self!.humiditylbl.text = "\(humidity!)%"
+                self!.humiditylbl.text = "Humidity : \(humidity!)%"
                 self?.windspeedlbl.text = "Wind speed : \(weather.wind.deg)°, \(weather.wind.speed)Kmph"
             }
         }
