@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FD94A90025A6E73B00ED9F4B /* HomeVCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD94A8FF25A6E73B00ED9F4B /* HomeVCUITests.swift */; };
 		FD94A90525A6E95B00ED9F4B /* SettingsVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD94A90425A6E95B00ED9F4B /* SettingsVCTests.swift */; };
+		FD94A90F25A77D4600ED9F4B /* HomeVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD94A90E25A77D4600ED9F4B /* HomeVCTests.swift */; };
 		FDB7BC4B25A6795500B5A5CF /* APIManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB7BC4A25A6795500B5A5CF /* APIManagerTest.swift */; };
 		FDB7BC5025A6D3C400B5A5CF /* SettingsVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB7BC4F25A6D3C400B5A5CF /* SettingsVCTests.swift */; };
 		FDF8344025A581E300E250FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8343F25A581E300E250FE /* HomeViewController.swift */; };
@@ -105,6 +106,7 @@
 /* Begin PBXFileReference section */
 		FD94A8FF25A6E73B00ED9F4B /* HomeVCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCUITests.swift; sourceTree = "<group>"; };
 		FD94A90425A6E95B00ED9F4B /* SettingsVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVCTests.swift; sourceTree = "<group>"; };
+		FD94A90E25A77D4600ED9F4B /* HomeVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCTests.swift; sourceTree = "<group>"; };
 		FDB7BC4A25A6795500B5A5CF /* APIManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTest.swift; sourceTree = "<group>"; };
 		FDB7BC4F25A6D3C400B5A5CF /* SettingsVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVCTests.swift; sourceTree = "<group>"; };
 		FDF8343F25A581E300E250FE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				FDFA17EE25A4C8D600611543 /* MyWeatherAppTests.swift */,
+				FD94A90E25A77D4600ED9F4B /* HomeVCTests.swift */,
 				FDFA180B25A4F00E00611543 /* DataManagerTest.swift */,
 				FDB7BC4A25A6795500B5A5CF /* APIManagerTest.swift */,
 				FDB7BC4F25A6D3C400B5A5CF /* SettingsVCTests.swift */,
@@ -553,6 +556,7 @@
 				FDFA183325A4F6AA00611543 /* MapViewController.swift in Sources */,
 				FDF834D625A5C16A00E250FE /* LocationTempViewModel.swift in Sources */,
 				FDF8347325A5ADDB00E250FE /* LocationTempViewController.swift in Sources */,
+				FD94A90F25A77D4600ED9F4B /* HomeVCTests.swift in Sources */,
 				FDF8354525A64F6B00E250FE /* Constant.swift in Sources */,
 				FDF8344B25A58BC900E250FE /* Place.swift in Sources */,
 				FDF8348A25A5B14A00E250FE /* Favorites+CoreDataClass.swift in Sources */,
