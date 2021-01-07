@@ -322,7 +322,7 @@
         <!--Settings-->
         <scene sceneID="dYZ-JH-CSo">
             <objects>
-                <viewController id="LQT-Kq-qft" customClass="SettingsViewController" customModule="MyWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LQT-Kq-qft" customClass="SettingsViewController" customModule="MyWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p09-a6-AMw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -28,14 +28,16 @@ class SettingsVCTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+
     func testNumberOfRows(){
 
-        let className = NSStringFromClass(SettingsViewController.classForCoder())
-        print(className)
-        XCTAssertEqual(className, "MyWeatherApp.SettingsViewController")
-        
-        
+        let storyboard = UIStoryboard(name: "Main", bundle:nil)
+        let vc = storyboard.instantiateViewController(identifier: "SettingsViewController") as! SettingsViewController
+//
+//        var  countRow:Int =  vc.tableView.numberOfRows(inSection: 0)
+//              XCTAssert(countRow == 4)
+//        print(vc.classForCoder )
+//        print(vc.tableView.numberOfRows(inSection: 0))
     }
 
 }
